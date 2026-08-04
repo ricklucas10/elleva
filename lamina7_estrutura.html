@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELLEVA — A Estrutura</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,400&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; height: 100%; background: #05050a; }
+    body { font-family: Inter, sans-serif; overflow: hidden; }
+    .slide { width: 960px; height: 540px; margin: auto; position: relative; overflow: hidden; background: radial-gradient(ellipse at 82% 15%, rgba(201,169,110,.09), transparent 35%), linear-gradient(145deg,#090914 0%,#05050a 55%,#0b0a12 100%); display: flex; flex-direction: column; justify-content: center; padding: 72px 105px; }
+    .grain { position: absolute; inset: 0; pointer-events: none; opacity: .2; background-image: radial-gradient(rgba(255,255,255,.08) .45px, transparent .6px); background-size: 5px 5px; mask-image: linear-gradient(90deg, transparent, black 35%, black 65%, transparent); }
+    .line { position:absolute; width: 1px; height: 330px; right: 170px; top: 105px; background: linear-gradient(transparent, rgba(201,169,110,.36), transparent); }
+    .orbit { position:absolute; right: 50px; top: 45px; width: 450px; height: 450px; border: 1px solid rgba(201,169,110,.09); border-radius: 50%; }
+    .orbit:after { content:''; position:absolute; inset: 56px; border: 1px solid rgba(201,169,110,.05); border-radius: 50%; }
+    .label { position: relative; color: rgba(201,169,110,.55); font-size: 10px; font-weight: 600; letter-spacing: 6px; margin-bottom: 26px; }
+    h1 { position: relative; max-width: 575px; color: #d8c9ab; font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 500; letter-spacing: .2px; line-height: 1.12; }
+    h1 em { color:#c9a96e; font-style: italic; }
+    .bodycopy { position: relative; max-width: 515px; margin-top: 25px; color: rgba(204,191,166,.57); font-size: 14px; line-height: 1.75; font-weight: 300; }
+    .bodycopy strong { font-weight: 500; color: rgba(222,207,178,.78); }
+    .rule { position:relative; width:40px; height:1px; background:rgba(201,169,110,.35); margin-top:26px; }
+    .cue { position:relative; margin-top:16px; color:rgba(201,169,110,.64); font-size:10px; font-weight:500; letter-spacing:2.8px; text-transform:uppercase; }
+    .footer { position:absolute; bottom:0; left:0; right:0; height:28px; display:flex; align-items:center; justify-content:space-between; padding:0 24px; border-top:1px solid rgba(201,169,110,.04); }
+    .footer-left { color:#c9a96e; font-size:9px; font-weight:700; letter-spacing:5px; }
+    .footer-right { color:rgba(180,160,130,.16); font-size:7px; letter-spacing:1.5px; text-transform:uppercase; }
+    .nav-arrow { position:fixed; top:50%; transform:translateY(-50%); width:48px; height:48px; display:flex; align-items:center; justify-content:center; color:#c9a96e; font-size:28px; text-decoration:none; border-radius:3px; transition:.3s; z-index:100; background:rgba(8,8,14,.85); border:1px solid rgba(200,165,100,.3); box-shadow:0 0 12px rgba(0,0,0,.5); }
+    .nav-arrow:hover { color:#fff; background:rgba(200,165,100,.15); border-color:rgba(200,165,100,.5); box-shadow:0 0 20px rgba(200,165,100,.15); }
+    .nav-prev { left:24px; }.nav-next { right:24px; }
+  </style>
+</head>
+<body>
+  <a class="nav-arrow nav-prev" href="lamina6.html">&#8592;</a>
+  <a class="nav-arrow nav-next" href="deck_pdf.html">&#8594;</a>
+  <main class="slide">
+    <div class="grain"></div><div class="orbit"></div><div class="line"></div>
+    <div class="label">A PRÓXIMA CAMADA</div>
+    <h1>Uma visão ganha força quando encontra <em>estrutura.</em></h1>
+    <p class="bodycopy">Até aqui, falamos sobre leitura de cenário, acesso e mérito. <strong>Agora, é hora de conhecer os elementos que transformam essa visão em uma experiência ELLEVA concreta.</strong></p>
+    <div class="rule"></div>
+    <div class="cue">Conheça a estrutura, passo a passo</div>
+    <div class="footer"><span class="footer-left">ELLEVA</span><span class="footer-right">by CTB Holdings</span></div>
+  </main>
+</body>
+</html>
