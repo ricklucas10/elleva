@@ -148,33 +148,41 @@
     letter-spacing: 1.5px;
   }
 
+  
+  /* === NAVEGACAO === */
+  body { position: relative; }
   .nav-arrow {
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(200, 165, 100, 0.15);
-    font-size: 18px;
+    color: rgba(200, 165, 100, 0.5);
+    font-size: 24px;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 3px;
     transition: all 0.3s;
-    z-index: 10;
+    z-index: 100;
     cursor: pointer;
+    border: 1px solid rgba(200, 165, 100, 0.1);
   }
   .nav-arrow:hover {
-    color: rgba(200, 165, 100, 0.5);
-    background: rgba(200, 165, 100, 0.05);
+    color: #c9a96e;
+    background: rgba(200, 165, 100, 0.1);
+    border-color: rgba(200, 165, 100, 0.25);
   }
-  .nav-prev { left: 12px; }
-  .nav-next { right: 12px; }
+  .nav-prev { left: 20px; }
+  .nav-next { right: 20px; }
 
 </style>
 </head>
 <body>
+  <a class="nav-arrow nav-prev" href="lamina2.html">&#8592;</a>
+  <a class="nav-arrow nav-next" href="<built-in function next>">&#8594;</a>
+
   <div class="slide">
     <div class="label">A Solução</div>
     
@@ -211,9 +219,5 @@
       <span class="footer-right">by CTB Holdings</span>
     </div>
   </div>
-
-    <a class="nav-arrow nav-prev" href="lamina2.html" title="Anterior">←</a>
-    <a class="nav-arrow nav-next" href="lamina4.html" title="Próximo">→</a>
-
 </body>
 </html>
