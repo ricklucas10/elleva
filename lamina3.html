@@ -56,7 +56,7 @@
     color: #d4c2a0;
     letter-spacing: 0.5px;
     line-height: 1.3;
-    max-width: 600px;
+    max-width: 620px;
   }
 
   .title strong {
@@ -66,16 +66,21 @@
   .subtitle {
     font-size: 14px;
     font-weight: 300;
-    color: rgba(190, 175, 150, 0.45);
+    color: rgba(190, 175, 150, 0.5);
     letter-spacing: 0.2px;
     line-height: 1.7;
-    max-width: 560px;
+    max-width: 580px;
+  }
+
+  .subtitle i {
+    color: rgba(200, 180, 150, 0.6);
+    font-style: italic;
   }
 
   .cards {
     display: flex;
     gap: 24px;
-    margin-top: 10px;
+    margin-top: 6px;
   }
 
   .card {
@@ -114,6 +119,11 @@
     line-height: 1.6;
   }
 
+  .card-text i {
+    color: rgba(200, 180, 150, 0.5);
+    font-style: italic;
+  }
+
   .highlight {
     position: absolute;
     bottom: 80px;
@@ -146,40 +156,25 @@
     color: rgba(180, 160, 130, 0.15);
     font-size: 7px;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 
-  
-  /* === NAVEGACAO === */
-  body { position: relative; }
   .nav-arrow {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #c9a96e;
-    font-size: 28px;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: all 0.3s;
-    z-index: 100;
-    cursor: pointer;
+    position: fixed; top: 50%; transform: translateY(-50%);
+    width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;
+    color: #c9a96e; font-size: 28px; text-decoration: none;
+    border-radius: 3px; transition: all 0.3s; z-index: 100; cursor: pointer;
     background: rgba(8, 8, 14, 0.85);
     border: 1px solid rgba(200, 165, 100, 0.3);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   }
   .nav-arrow:hover {
-    color: #fff;
-    background: rgba(200, 165, 100, 0.15);
+    color: #fff; background: rgba(200, 165, 100, 0.15);
     border-color: rgba(200, 165, 100, 0.5);
     box-shadow: 0 0 20px rgba(200, 165, 100, 0.15);
   }
   .nav-prev { left: 24px; }
   .nav-next { right: 24px; }
-
 </style>
 </head>
 <body>
@@ -187,31 +182,31 @@
   <a class="nav-arrow nav-next" href="lamina4.html">&#8594;</a>
 
   <div class="slide">
-    <div class="label">A Solução</div>
+    <div class="label">O que é a ELLEVA</div>
     
     <div class="title">
-      Um <strong>sistema de tecnologia financeira</strong> que conecta qualquer pessoa às mesmas operações que antes eram exclusivas de grandes investidores.
+      Um <strong>ecossistema que nasce de uma visão</strong>: oferecer tecnologia de ponta antes exclusiva de grandes investidores — agora aberta para <strong>todas as pessoas, de todas as classes</strong>.
     </div>
 
     <div class="subtitle">
-      ProfitShare real. Transparência total em blockchain. Saques via Pix ou USDT. Tudo auditável. Tudo verificável. Tudo acessível.
+      Um sistema desenhado para ser <i>simples, acessível e transparente</i>. Sem barreiras. Sem exigências absurdas. Sem letras miúdas.
     </div>
 
     <div class="cards">
       <div class="card">
-        <div class="card-icon">🔐</div>
-        <div class="card-title">Blockchain Auditável</div>
-        <div class="card-text">Cada operação registrada em ledger imutável. Ninguém pode alterar. Qualquer um pode verificar.</div>
+        <div class="card-icon">📊</div>
+        <div class="card-title">Auditada pela MyFXBook</div>
+        <div class="card-text">Plataforma <i>reconhecida internacionalmente</i> por investidores e traders. Transparência total: cada resultado é verificável, público e à prova de manipulação.</div>
       </div>
       <div class="card">
-        <div class="card-icon">⚡</div>
-        <div class="card-title">Acesso Imediato</div>
-        <div class="card-text">Entre com US$ 10. Conecte sua carteira. Acompanhe sua performance em tempo real.</div>
+        <div class="card-icon">🚀</div>
+        <div class="card-title">Simples para Todos</div>
+        <div class="card-text">Com apenas <i>US$ 10</i> você cria sua carteira, conecta e dá o primeiro passo. De forma intuitiva, imediata e sem complicação.</div>
       </div>
       <div class="card">
-        <div class="card-icon">🌎</div>
-        <div class="card-title">Operações Globais</div>
-        <div class="card-text">Trading, commodities, ativos digitais. As mesmas estratégias dos grandes fundos.</div>
+        <div class="card-icon">🌐</div>
+        <div class="card-title">Estratégia Diversificada</div>
+        <div class="card-text">Operações distribuídas de forma estratégica nos <i>3 maiores mercados do mundo</i>: Forex, Commodities e Criptomoedas. Tudo com transparência em tempo real.</div>
       </div>
     </div>
 
