@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELLEVA — O Lastro</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #05050a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .slide {
+    width: 960px;
+    height: 540px;
+    background: linear-gradient(160deg, #080814 0%, #05050d 50%, #0a0a14 100%);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 100px rgba(180, 150, 80, 0.04);
+    padding: 70px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(200, 165, 100, 0.15), transparent);
+  }
+
+  .label {
+    color: rgba(200, 165, 100, 0.4);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+
+  .headline {
+    font-size: 22px;
+    font-weight: 300;
+    color: #d4c2a0;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    max-width: 600px;
+  }
+
+  .headline strong {
+    font-weight: 600;
+  }
+
+  .shield-row {
+    display: flex;
+    gap: 32px;
+    align-items: stretch;
+  }
+
+  .shield-item {
+    flex: 1;
+    padding: 30px 24px;
+    background: rgba(200, 165, 100, 0.02);
+    border: 1px solid rgba(200, 165, 100, 0.05);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .shield-icon {
+    font-size: 24px;
+  }
+
+  .shield-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #c9a96e;
+    letter-spacing: 0.5px;
+  }
+
+  .shield-text {
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(180, 160, 130, 0.4);
+    line-height: 1.7;
+  }
+
+  .cert-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 18px 24px;
+    background: rgba(200, 165, 100, 0.03);
+    border: 1px solid rgba(200, 165, 100, 0.05);
+    border-radius: 2px;
+  }
+
+  .cert-text {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(190, 175, 150, 0.5);
+    letter-spacing: 0.2px;
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .cert-badge {
+    font-size: 10px;
+    font-weight: 600;
+    color: #c9a96e;
+    letter-spacing: 2px;
+    padding: 8px 16px;
+    border: 1px solid rgba(200, 165, 100, 0.15);
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-top: 1px solid rgba(200, 165, 100, 0.03);
+  }
+
+  .footer-left {
+    color: #c9a96e;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+
+  .footer-right {
+    color: rgba(180, 160, 130, 0.15);
+    font-size: 7px;
+    letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">Segurança e Lastro</div>
+    
+    <div class="headline">
+      Por trás do sistema, uma <strong>holding internacional registrada no Reino Unido</strong> — capital integralizado, estrutura auditada, operações reguladas.
+    </div>
+
+    <div class="shield-row">
+      <div class="shield-item">
+        <div class="shield-icon">🏛️</div>
+        <div class="shield-title">Registro Companies House</div>
+        <div class="shield-text">Holding registrada em Londres sob as leis do Reino Unido. Dados públicos, verificáveis por qualquer pessoa, a qualquer momento.</div>
+      </div>
+      <div class="shield-item">
+        <div class="shield-icon">🔒</div>
+        <div class="shield-title">Capital Integralizado</div>
+        <div class="shield-text">Todo o capital social da holding está integralizado e declarado oficialmente. Nenhum valor a integralizar. Lastro real.</div>
+      </div>
+      <div class="shield-item">
+        <div class="shield-icon">📋</div>
+        <div class="shield-title">Contratos Verificáveis</div>
+        <div class="shield-text">Smart contracts auditados. Relatórios financeiros disponíveis. Todas as operações rastreáveis em blockchain pública.</div>
+      </div>
+    </div>
+
+    <div class="cert-row">
+      <div class="cert-text">
+        <strong>SIC Codes registrados:</strong> Holding de serviços financeiros · Trading de commodities · Intermediação financeira · Atividades de segurança e contratos
+      </div>
+      <a class="cert-badge" href="https://find-and-update.company-information.service.gov.uk/company/14700053" target="_blank">Verificar ↗</a>
+    </div>
+
+    <div class="footer">
+      <span class="footer-left">ELLEVA</span>
+      <span class="footer-right">by CTB Holdings</span>
+    </div>
+  </div>
+</body>
+</html>

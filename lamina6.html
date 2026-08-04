@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELLEVA — A Rede</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #05050a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .slide {
+    width: 960px;
+    height: 540px;
+    background: linear-gradient(160deg, #080814 0%, #05050d 50%, #0a0a14 100%);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 100px rgba(180, 150, 80, 0.04);
+    padding: 70px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+  }
+
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(200, 165, 100, 0.15), transparent);
+  }
+
+  .label {
+    color: rgba(200, 165, 100, 0.4);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+
+  .headline {
+    font-size: 22px;
+    font-weight: 300;
+    color: #d4c2a0;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    max-width: 600px;
+  }
+
+  .headline strong {
+    font-weight: 600;
+  }
+
+  .grid-2col {
+    display: flex;
+    gap: 40px;
+  }
+
+  .col-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .col-right {
+    flex: 1.2;
+  }
+
+  .bonus-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    background: rgba(200, 165, 100, 0.02);
+    border: 1px solid rgba(200, 165, 100, 0.05);
+    border-radius: 2px;
+  }
+
+  .bonus-pct {
+    font-size: 22px;
+    font-weight: 700;
+    color: #c9a96e;
+    min-width: 55px;
+  }
+
+  .bonus-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .bonus-name {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(200, 180, 150, 0.6);
+  }
+
+  .bonus-desc {
+    font-size: 10px;
+    font-weight: 300;
+    color: rgba(180, 160, 130, 0.35);
+  }
+
+  .vision-box {
+    padding: 28px 24px;
+    background: rgba(200, 165, 100, 0.03);
+    border: 1px solid rgba(200, 165, 100, 0.08);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .vision-label {
+    font-size: 9px;
+    font-weight: 600;
+    color: rgba(200, 165, 100, 0.4);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .vision-text {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(190, 175, 150, 0.45);
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+  }
+
+  .vision-text i {
+    color: rgba(200, 180, 150, 0.55);
+  }
+
+  .arrow-down {
+    position: absolute;
+    bottom: 48px;
+    right: 80px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(200, 165, 100, 0.3);
+    letter-spacing: 0.3px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-top: 1px solid rgba(200, 165, 100, 0.03);
+  }
+
+  .footer-left {
+    color: #c9a96e;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+
+  .footer-right {
+    color: rgba(180, 160, 130, 0.15);
+    font-size: 7px;
+    letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">A Rede</div>
+    
+    <div class="headline">
+      Quanto mais pessoas você trouxer, <strong>maior sua participação</strong>. Um sistema onde o <strong>seu crescimento acelera o crescimento de todos</strong>.
+    </div>
+
+    <div class="grid-2col">
+      <div class="col-left">
+        <div class="bonus-item">
+          <div class="bonus-pct">10%</div>
+          <div class="bonus-info">
+            <div class="bonus-name">Bônus de Indicação Direta</div>
+            <div class="bonus-desc">Sobre cada ativação do seu convidado direto</div>
+          </div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-pct">5%</div>
+          <div class="bonus-info">
+            <div class="bonus-name">Bônus de 2º Nível</div>
+            <div class="bonus-desc">Sobre as ativações da sua rede indireta</div>
+          </div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-pct">3%</div>
+          <div class="bonus-info">
+            <div class="bonus-name">Bônus de 3º Nível</div>
+            <div class="bonus-desc">Alcance mais profundo da sua rede</div>
+          </div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-pct">✦</div>
+          <div class="bonus-info">
+            <div class="bonus-name">Bônus de Liderança</div>
+            <div class="bonus-desc">Conquistas e milestones com recompensas progressivas</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-right">
+        <div class="vision-box">
+          <div class="vision-label">Por que isso funciona</div>
+          <div class="vision-text">
+            Nosso plano de compensação foi desenhado para <i>recompensar o crescimento coletivo</i>. Cada pessoa que entra não compete com você — ela <i>multiplica o seu resultado</i>.
+          </div>
+          <div class="vision-text" style="margin-top: 8px;">
+            O sistema se torna mais forte a cada novo participante. <i>Esse é o poder da rede.</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow-down">Plano detalhado nas próximas lâminas ↓</div>
+
+    <div class="footer">
+      <span class="footer-left">ELLEVA</span>
+      <span class="footer-right">by CTB Holdings</span>
+    </div>
+  </div>
+</body>
+</html>

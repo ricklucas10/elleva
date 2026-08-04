@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELLEVA — A Oportunidade</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #05050a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .slide {
+    width: 960px;
+    height: 540px;
+    background: linear-gradient(160deg, #080814 0%, #05050d 50%, #0a0a14 100%);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 100px rgba(180, 150, 80, 0.04);
+    padding: 70px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+  }
+
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(200, 165, 100, 0.15), transparent);
+  }
+
+  .label {
+    color: rgba(200, 165, 100, 0.4);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+
+  .headline {
+    font-size: 22px;
+    font-weight: 300;
+    color: #d4c2a0;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    max-width: 600px;
+  }
+
+  .headline strong {
+    font-weight: 600;
+  }
+
+  .plan-cards {
+    display: flex;
+    gap: 20px;
+  }
+
+  .plan {
+    flex: 1;
+    padding: 28px 20px;
+    background: rgba(200, 165, 100, 0.02);
+    border: 1px solid rgba(200, 165, 100, 0.05);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+  }
+
+  .plan.featured {
+    border-color: rgba(200, 165, 100, 0.15);
+    background: rgba(200, 165, 100, 0.04);
+  }
+
+  .plan.featured::before {
+    content: 'MAIS POPULAR';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 7px;
+    font-weight: 600;
+    color: #c9a96e;
+    letter-spacing: 2px;
+    background: #080814;
+    padding: 3px 12px;
+    border: 1px solid rgba(200, 165, 100, 0.15);
+    border-radius: 2px;
+  }
+
+  .plan-level {
+    font-size: 9px;
+    font-weight: 600;
+    color: rgba(200, 165, 100, 0.5);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .plan-value {
+    font-size: 38px;
+    font-weight: 700;
+    color: #c9a96e;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  .plan-value small {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(200, 165, 100, 0.4);
+    letter-spacing: 0;
+  }
+
+  .plan-detail {
+    font-size: 10px;
+    font-weight: 300;
+    color: rgba(180, 160, 130, 0.35);
+    line-height: 1.6;
+  }
+
+  .flow-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .flow-step {
+    flex: 1;
+    text-align: center;
+    padding: 14px 10px;
+    background: rgba(200, 165, 100, 0.02);
+    border: 1px solid rgba(200, 165, 100, 0.04);
+    border-radius: 2px;
+  }
+
+  .flow-num {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(200, 165, 100, 0.15);
+  }
+
+  .flow-text {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(180, 160, 130, 0.4);
+    margin-top: 6px;
+  }
+
+  .flow-arrow {
+    color: rgba(200, 165, 100, 0.12);
+    font-size: 18px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-top: 1px solid rgba(200, 165, 100, 0.03);
+  }
+
+  .footer-left {
+    color: #c9a96e;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+
+  .footer-right {
+    color: rgba(180, 160, 130, 0.15);
+    font-size: 7px;
+    letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">A Oportunidade</div>
+    
+    <div class="headline">
+      As mesmas <strong>estratégias de investimento</strong> dos grandes fundos. Agora disponíveis para <strong>qualquer pessoa</strong>.
+    </div>
+
+    <div class="plan-cards">
+      <div class="plan">
+        <div class="plan-level">Plano · Inicial</div>
+        <div class="plan-value"><small>US$</small> 10</div>
+        <div class="plan-detail">Porta de entrada. Participe do ProfitShare e descubra o sistema.</div>
+      </div>
+      <div class="plan featured">
+        <div class="plan-level">Plano · Essencial</div>
+        <div class="plan-value"><small>US$</small> 100</div>
+        <div class="plan-detail">Maior participação nos lucros. Acesso a relatórios detalhados.</div>
+      </div>
+      <div class="plan">
+        <div class="plan-level">Plano · Avançado</div>
+        <div class="plan-value"><small>US$</small> 500</div>
+        <div class="plan-detail">Participação premium. Relatórios exclusivos e prioridade em novas operações.</div>
+      </div>
+      <div class="plan">
+        <div class="plan-level">Plano · Elite</div>
+        <div class="plan-value"><small>US$</small> 1.000</div>
+        <div class="plan-detail">Máxima exposição ao ProfitShare. Benefícios completos da rede.</div>
+      </div>
+    </div>
+
+    <div class="flow-row">
+      <div class="flow-step">
+        <div class="flow-num">01</div>
+        <div class="flow-text">Conecte sua carteira</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-num">02</div>
+        <div class="flow-text">Escolha seu plano</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-num">03</div>
+        <div class="flow-text">Pagamento via Pix ou USDT</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-num">04</div>
+        <div class="flow-text">Acompanhe em tempo real</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="footer-left">ELLEVA</span>
+      <span class="footer-right">by CTB Holdings</span>
+    </div>
+  </div>
+</body>
+</html>

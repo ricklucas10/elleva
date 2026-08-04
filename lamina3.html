@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELLEVA — A Solução</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #05050a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .slide {
+    width: 960px;
+    height: 540px;
+    background: linear-gradient(160deg, #080814 0%, #05050d 50%, #0a0a14 100%);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 100px rgba(180, 150, 80, 0.04);
+    padding: 70px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(200, 165, 100, 0.15), transparent);
+  }
+
+  .label {
+    color: rgba(200, 165, 100, 0.4);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 300;
+    color: #d4c2a0;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    max-width: 600px;
+  }
+
+  .title strong {
+    font-weight: 600;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(190, 175, 150, 0.45);
+    letter-spacing: 0.2px;
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 24px;
+    margin-top: 10px;
+  }
+
+  .card {
+    flex: 1;
+    padding: 28px 24px;
+    background: rgba(200, 165, 100, 0.03);
+    border: 1px solid rgba(200, 165, 100, 0.06);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    background: rgba(200, 165, 100, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .card-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #c9a96e;
+    letter-spacing: 0.3px;
+  }
+
+  .card-text {
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(180, 160, 130, 0.4);
+    line-height: 1.6;
+  }
+
+  .highlight {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgba(200, 165, 100, 0.06);
+    letter-spacing: -2px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-top: 1px solid rgba(200, 165, 100, 0.03);
+  }
+
+  .footer-left {
+    color: #c9a96e;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+
+  .footer-right {
+    color: rgba(180, 160, 130, 0.15);
+    font-size: 7px;
+    letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">A Solução</div>
+    
+    <div class="title">
+      Um <strong>sistema de tecnologia financeira</strong> que conecta qualquer pessoa às mesmas operações que antes eram exclusivas de grandes investidores.
+    </div>
+
+    <div class="subtitle">
+      ProfitShare real. Transparência total em blockchain. Saques via Pix ou USDT. Tudo auditável. Tudo verificável. Tudo acessível.
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🔐</div>
+        <div class="card-title">Blockchain Auditável</div>
+        <div class="card-text">Cada operação registrada em ledger imutável. Ninguém pode alterar. Qualquer um pode verificar.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <div class="card-title">Acesso Imediato</div>
+        <div class="card-text">Entre com US$ 10. Conecte sua carteira. Acompanhe sua performance em tempo real.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌎</div>
+        <div class="card-title">Operações Globais</div>
+        <div class="card-text">Trading, commodities, ativos digitais. As mesmas estratégias dos grandes fundos.</div>
+      </div>
+    </div>
+
+    <div class="highlight">US$ 10</div>
+
+    <div class="footer">
+      <span class="footer-left">ELLEVA</span>
+      <span class="footer-right">by CTB Holdings</span>
+    </div>
+  </div>
+</body>
+</html>

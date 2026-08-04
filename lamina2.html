@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELLEVA — O Problema</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #05050a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .slide {
+    width: 960px;
+    height: 540px;
+    background: linear-gradient(160deg, #080814 0%, #05050d 50%, #0a0a14 100%);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 100px rgba(180, 150, 80, 0.04);
+    padding: 70px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(200, 165, 100, 0.15), transparent);
+  }
+
+  .label {
+    color: rgba(200, 165, 100, 0.4);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+
+  .big-number {
+    font-size: 140px;
+    font-weight: 700;
+    color: #c9a96e;
+    line-height: 0.85;
+    letter-spacing: -4px;
+  }
+
+  .big-number span {
+    font-size: 50px;
+    color: rgba(200, 165, 100, 0.3);
+    letter-spacing: 0;
+    margin-left: 8px;
+  }
+
+  .context {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(190, 175, 150, 0.45);
+    letter-spacing: 0.2px;
+    line-height: 1.7;
+    max-width: 520px;
+  }
+
+  .context strong {
+    color: rgba(200, 180, 150, 0.7);
+    font-weight: 500;
+  }
+
+  .stats-row {
+    display: flex;
+    gap: 60px;
+    margin-top: 10px;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .stat-value {
+    font-size: 26px;
+    font-weight: 600;
+    color: #c9a96e;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(180, 160, 130, 0.35);
+    letter-spacing: 0.3px;
+  }
+
+  .line {
+    width: 40px;
+    height: 1px;
+    background: rgba(200, 165, 100, 0.15);
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-top: 1px solid rgba(200, 165, 100, 0.03);
+  }
+
+  .footer-left {
+    color: #c9a96e;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+
+  .footer-right {
+    color: rgba(180, 160, 130, 0.15);
+    font-size: 7px;
+    letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="label">O Problema</div>
+    
+    <div class="big-number">1<span>%</span></div>
+    
+    <div class="context">
+      Apenas <strong>1% da população mundial</strong> tem acesso aos grandes fundos de investimento. O sistema financeiro global foi desenhado para <strong>concentrar riqueza no topo</strong> — e manter bilhões de pessoas do lado de fora.
+    </div>
+
+    <div class="line"></div>
+
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="stat-value">US$ 100k</div>
+        <div class="stat-label">Mínimo exigido por fundos tradicionais</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">85%</div>
+        <div class="stat-label">Da riqueza global nas mãos de 10%</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">4 bilhões</div>
+        <div class="stat-label">De pessoas completamente excluídas</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="footer-left">ELLEVA</span>
+      <span class="footer-right">by CTB Holdings</span>
+    </div>
+  </div>
+</body>
+</html>
