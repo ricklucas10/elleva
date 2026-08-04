@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ELLEVA — A Rede</title>
+<title>ELLEVA — Crescimento</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -27,11 +27,11 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 100px rgba(180, 150, 80, 0.04);
-    padding: 70px 80px;
+    padding: 66px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 36px;
+    gap: 34px;
   }
 
   .slide::before {
@@ -56,7 +56,7 @@
     color: #d4c2a0;
     letter-spacing: 0.3px;
     line-height: 1.4;
-    max-width: 600px;
+    max-width: 620px;
   }
 
   .headline strong {
@@ -72,14 +72,14 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
   }
 
   .col-right {
     flex: 1.2;
   }
 
-  .bonus-item {
+  .reward-item {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -89,39 +89,39 @@
     border-radius: 2px;
   }
 
-  .bonus-pct {
+  .reward-pct {
     font-size: 22px;
     font-weight: 700;
     color: #c9a96e;
     min-width: 55px;
   }
 
-  .bonus-info {
+  .reward-info {
     display: flex;
     flex-direction: column;
     gap: 2px;
   }
 
-  .bonus-name {
+  .reward-name {
     font-size: 11px;
     font-weight: 500;
     color: rgba(200, 180, 150, 0.6);
   }
 
-  .bonus-desc {
+  .reward-desc {
     font-size: 10px;
     font-weight: 300;
     color: rgba(180, 160, 130, 0.35);
   }
 
   .vision-box {
-    padding: 28px 24px;
+    padding: 26px 24px;
     background: rgba(200, 165, 100, 0.03);
     border: 1px solid rgba(200, 165, 100, 0.08);
     border-radius: 2px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
     height: 100%;
     justify-content: center;
   }
@@ -144,15 +144,16 @@
 
   .vision-text i {
     color: rgba(200, 180, 150, 0.55);
+    font-style: italic;
   }
 
   .arrow-down {
     position: absolute;
-    bottom: 48px;
+    bottom: 46px;
     right: 80px;
-    font-size: 13px;
-    font-weight: 400;
-    color: rgba(200, 165, 100, 0.3);
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(200, 165, 100, 0.25);
     letter-spacing: 0.3px;
   }
 
@@ -178,40 +179,25 @@
     color: rgba(180, 160, 130, 0.15);
     font-size: 7px;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 
-  
-  /* === NAVEGACAO === */
-  body { position: relative; }
   .nav-arrow {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #c9a96e;
-    font-size: 28px;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: all 0.3s;
-    z-index: 100;
-    cursor: pointer;
+    position: fixed; top: 50%; transform: translateY(-50%);
+    width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;
+    color: #c9a96e; font-size: 28px; text-decoration: none;
+    border-radius: 3px; transition: all 0.3s; z-index: 100; cursor: pointer;
     background: rgba(8, 8, 14, 0.85);
     border: 1px solid rgba(200, 165, 100, 0.3);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   }
   .nav-arrow:hover {
-    color: #fff;
-    background: rgba(200, 165, 100, 0.15);
+    color: #fff; background: rgba(200, 165, 100, 0.15);
     border-color: rgba(200, 165, 100, 0.5);
     box-shadow: 0 0 20px rgba(200, 165, 100, 0.15);
   }
   .nav-prev { left: 24px; }
   .nav-next { right: 24px; }
-
 </style>
 </head>
 <body>
@@ -219,58 +205,58 @@
   <a class="nav-arrow nav-next" href="deck.html">&#8594;</a>
 
   <div class="slide">
-    <div class="label">A Rede</div>
+    <div class="label">Expansão do Ecossistema</div>
     
     <div class="headline">
-      Quanto mais pessoas você trouxer, <strong>maior sua participação</strong>. Um sistema onde o <strong>seu crescimento acelera o crescimento de todos</strong>.
+      Um sistema <strong>projetado para recompensar a meritocracia</strong>. Quem fortalece o ecossistema primeiro colhe os maiores resultados.
     </div>
 
     <div class="grid-2col">
       <div class="col-left">
-        <div class="bonus-item">
-          <div class="bonus-pct">10%</div>
-          <div class="bonus-info">
-            <div class="bonus-name">Bônus de Indicação Direta</div>
-            <div class="bonus-desc">Sobre cada ativação do seu convidado direto</div>
+        <div class="reward-item">
+          <div class="reward-pct">10%</div>
+          <div class="reward-info">
+            <div class="reward-name">Conexão Direta</div>
+            <div class="reward-desc">Recompensa imediata ao trazer alguém para o ecossistema</div>
           </div>
         </div>
-        <div class="bonus-item">
-          <div class="bonus-pct">5%</div>
-          <div class="bonus-info">
-            <div class="bonus-name">Bônus de 2º Nível</div>
-            <div class="bonus-desc">Sobre as ativações da sua rede indireta</div>
+        <div class="reward-item">
+          <div class="reward-pct">5%</div>
+          <div class="reward-info">
+            <div class="reward-name">Alcance Expandido</div>
+            <div class="reward-desc">Quando suas conexões também expandem o ecossistema</div>
           </div>
         </div>
-        <div class="bonus-item">
-          <div class="bonus-pct">3%</div>
-          <div class="bonus-info">
-            <div class="bonus-name">Bônus de 3º Nível</div>
-            <div class="bonus-desc">Alcance mais profundo da sua rede</div>
+        <div class="reward-item">
+          <div class="reward-pct">3%</div>
+          <div class="reward-info">
+            <div class="reward-name">Impacto Progressivo</div>
+            <div class="reward-desc">Quanto mais profundo o ecossistema cresce a partir de você</div>
           </div>
         </div>
-        <div class="bonus-item">
-          <div class="bonus-pct">✦</div>
-          <div class="bonus-info">
-            <div class="bonus-name">Bônus de Liderança</div>
-            <div class="bonus-desc">Conquistas e milestones com recompensas progressivas</div>
+        <div class="reward-item">
+          <div class="reward-pct">✦</div>
+          <div class="reward-info">
+            <div class="reward-name">Reconhecimento por Resultado</div>
+            <div class="reward-desc">Patamares exclusivos para quem se destaca na construção do ecossistema</div>
           </div>
         </div>
       </div>
 
       <div class="col-right">
         <div class="vision-box">
-          <div class="vision-label">Por que isso funciona</div>
+          <div class="vision-label">A Lógica do Pioneiro</div>
           <div class="vision-text">
-            Nosso plano de compensação foi desenhado para <i>recompensar o crescimento coletivo</i>. Cada pessoa que entra não compete com você — ela <i>multiplica o seu resultado</i>.
+            O ecossistema foi <i>projetado milimetricamente</i> para recompensar quem chega primeiro. Quem enxerga antes, colhe antes. Quem constrói com consistência, alcança patamares que se tornam <i>exponencialmente maiores</i>.
           </div>
-          <div class="vision-text" style="margin-top: 8px;">
-            O sistema se torna mais forte a cada novo participante. <i>Esse é o poder da rede.</i>
+          <div class="vision-text">
+            Cada pessoa que entra por meio de você <i>multiplica o seu potencial</i> — e também o dela. Não existe competição. Existe <i>expansão compartilhada</i>.
           </div>
         </div>
       </div>
     </div>
 
-    <div class="arrow-down">Plano detalhado nas próximas lâminas ↓</div>
+    <div class="arrow-down">Detalhamento completo nas próximas lâminas ↓</div>
 
     <div class="footer">
       <span class="footer-left">ELLEVA</span>

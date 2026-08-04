@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ELLEVA — A Oportunidade</title>
+<title>ELLEVA — A Jornada</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -27,11 +27,11 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 100px rgba(180, 150, 80, 0.04);
-    padding: 70px 80px;
+    padding: 66px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 36px;
+    gap: 34px;
   }
 
   .slide::before {
@@ -56,7 +56,7 @@
     color: #d4c2a0;
     letter-spacing: 0.3px;
     line-height: 1.4;
-    max-width: 600px;
+    max-width: 620px;
   }
 
   .headline strong {
@@ -70,13 +70,13 @@
 
   .plan {
     flex: 1;
-    padding: 28px 20px;
+    padding: 26px 18px;
     background: rgba(200, 165, 100, 0.02);
     border: 1px solid rgba(200, 165, 100, 0.05);
     border-radius: 2px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
     position: relative;
   }
 
@@ -86,7 +86,7 @@
   }
 
   .plan.featured::before {
-    content: 'MAIS POPULAR';
+    content: 'PONTO DE PARTIDA';
     position: absolute;
     top: -10px;
     left: 50%;
@@ -101,16 +101,16 @@
     border-radius: 2px;
   }
 
-  .plan-level {
-    font-size: 9px;
-    font-weight: 600;
-    color: rgba(200, 165, 100, 0.5);
-    letter-spacing: 3px;
+  .plan-name {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(200, 165, 100, 0.45);
+    letter-spacing: 1.5px;
     text-transform: uppercase;
   }
 
   .plan-value {
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 700;
     color: #c9a96e;
     letter-spacing: -1px;
@@ -118,13 +118,13 @@
   }
 
   .plan-value small {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     color: rgba(200, 165, 100, 0.4);
     letter-spacing: 0;
   }
 
-  .plan-detail {
+  .plan-desc {
     font-size: 10px;
     font-weight: 300;
     color: rgba(180, 160, 130, 0.35);
@@ -186,40 +186,25 @@
     color: rgba(180, 160, 130, 0.15);
     font-size: 7px;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 
-  
-  /* === NAVEGACAO === */
-  body { position: relative; }
   .nav-arrow {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #c9a96e;
-    font-size: 28px;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: all 0.3s;
-    z-index: 100;
-    cursor: pointer;
+    position: fixed; top: 50%; transform: translateY(-50%);
+    width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;
+    color: #c9a96e; font-size: 28px; text-decoration: none;
+    border-radius: 3px; transition: all 0.3s; z-index: 100; cursor: pointer;
     background: rgba(8, 8, 14, 0.85);
     border: 1px solid rgba(200, 165, 100, 0.3);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   }
   .nav-arrow:hover {
-    color: #fff;
-    background: rgba(200, 165, 100, 0.15);
+    color: #fff; background: rgba(200, 165, 100, 0.15);
     border-color: rgba(200, 165, 100, 0.5);
     box-shadow: 0 0 20px rgba(200, 165, 100, 0.15);
   }
   .nav-prev { left: 24px; }
   .nav-next { right: 24px; }
-
 </style>
 </head>
 <body>
@@ -227,32 +212,32 @@
   <a class="nav-arrow nav-next" href="lamina6.html">&#8594;</a>
 
   <div class="slide">
-    <div class="label">A Oportunidade</div>
+    <div class="label">A Jornada</div>
     
     <div class="headline">
-      As mesmas <strong>estratégias de investimento</strong> dos grandes fundos. Agora disponíveis para <strong>qualquer pessoa</strong>.
+      Quanto <strong>maior seu nível de envolvimento</strong> com o ecossistema, maior o <strong>potencial que se revela para você</strong>.
     </div>
 
     <div class="plan-cards">
       <div class="plan">
-        <div class="plan-level">Plano · Inicial</div>
+        <div class="plan-name">Descoberta</div>
         <div class="plan-value"><small>US$</small> 10</div>
-        <div class="plan-detail">Porta de entrada. Participe do ProfitShare e descubra o sistema.</div>
+        <div class="plan-desc">Sua porta de entrada. Ideal para explorar o ecossistema e entender como tudo funciona.</div>
       </div>
       <div class="plan featured">
-        <div class="plan-level">Plano · Essencial</div>
+        <div class="plan-name">Essencial</div>
         <div class="plan-value"><small>US$</small> 100</div>
-        <div class="plan-detail">Maior participação nos lucros. Acesso a relatórios detalhados.</div>
+        <div class="plan-desc">Para quem já entendeu o valor e quer acesso a um potencial ampliado dentro do ecossistema.</div>
       </div>
       <div class="plan">
-        <div class="plan-level">Plano · Avançado</div>
+        <div class="plan-name">Avançado</div>
         <div class="plan-value"><small>US$</small> 500</div>
-        <div class="plan-detail">Participação premium. Relatórios exclusivos e prioridade em novas operações.</div>
+        <div class="plan-desc">Nível estratégico para quem busca protagonismo e alcance diferenciado nos resultados.</div>
       </div>
       <div class="plan">
-        <div class="plan-level">Plano · Elite</div>
+        <div class="plan-name">Elite</div>
         <div class="plan-value"><small>US$</small> 1.000</div>
-        <div class="plan-detail">Máxima exposição ao ProfitShare. Benefícios completos da rede.</div>
+        <div class="plan-desc">Máximo potencial. Para visionários que enxergam o ecossistema em sua plenitude.</div>
       </div>
     </div>
 
@@ -264,7 +249,7 @@
       <div class="flow-arrow">→</div>
       <div class="flow-step">
         <div class="flow-num">02</div>
-        <div class="flow-text">Escolha seu plano</div>
+        <div class="flow-text">Escolha seu ponto de partida</div>
       </div>
       <div class="flow-arrow">→</div>
       <div class="flow-step">
@@ -274,7 +259,7 @@
       <div class="flow-arrow">→</div>
       <div class="flow-step">
         <div class="flow-num">04</div>
-        <div class="flow-text">Acompanhe em tempo real</div>
+        <div class="flow-text">Acompanhe seu potencial</div>
       </div>
     </div>
 
